@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+
+}
+
+.titulo{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 0 10px 0 0;
+    /* aplicando espaçamento interno */
+    padding: 10px;
+    padding: 0 10px;
+}
+
+.formulario{
+    background-color: rgb(105, 105, 105);
+    width: 300px;
+    margin: 0 auto;
+    /* centraliza */
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.input-nome{
+    /* remover as bordas */
+    border: none;
+    /* aplica curvatura nas bordas */
+    border-radius: 10px;
+    margin-left: 10px;
+    /* definir opacidade no campo texto */
+    opacity: 70%;
+}
+
+.botao{
+    background-color: rgb(9, 204, 52);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    /* aplicando sombra no texto x,y bluor */
+    text-shadow: 5px 2px 5px rgba(212,14,57, 0.9);
+
+}
+
+a{
+    margin-left: 30px;
+    color: aliceblue;
+}
+
+.imagem-prin{
+    /* aplicando tamanho em largura */
+    width: 1466px;
+    /* aplicando tamanho em altura */
+    height: 400px;
+}
