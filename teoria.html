@@ -162,6 +162,56 @@
          <label>Senha</label>
          <input type="password" class="input-nome" placeholder="Digite uma senha"><br>
          <input href="#" type="button" class="botao" value="Entrar">
-    </form>
+    <br>
+
+    <!-- Incluindo  checkbox(opções) -->
+         <input type="checkbox" class="checar"> Eu tenho uma bicicleta <br>
+         <input type="checkbox" class="checar">Eu tenho uma moto <br>
+         <input type="checkbox" class="checar"> Eu tenho um carro <br>
+     
+        <!-- Incluir input de cor -->
+         <input type="color" value="#000000">
+
+         <!-- Inserindo Data -->
+          <br><label for="">Data de nascimento</label>
+          <input type="date">
+          <input type="datetime-local">
+
+          <!-- Input do tipo email -->
+           <input type="email" placeholder="Digite seu email" class="email">
+
+           <!-- Seleção de arquivo -->
+            <input type="file">
+    
+
+    <select class="selecao">
+    <option value="">Selecione a escolaridade</option>
+    <option value="primeiro medio">1° Médio</option>
+    <option value="segundo medio">2° Médio</option>
+    <option value="terceiro medio">3° Médio</option>
+    </select>
+   
+
+    <p>Radio button</p>
+    <input type="radio" name="tamanho">Pequeno
+    <input type="radio" name="tamanho">Medio
+    <input type="radio" name="tamanho">Grande 
+    <br>
+
+    <p>Radio button</p>
+    <input type="radio" name="tamanho" class="radio">Pequeno
+    <input type="radio" name="tamanho" >Medio
+    <input type="radio" name="tamanho">Grande
+
+    <!-- Criar um grupo de componentes -->
+     <fieldset>
+        <legend>Descrição</legend>
+        <textarea name="" id=""></textarea>
+     </fieldset>
+
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+
+   </form>
 </body>
 </html>
