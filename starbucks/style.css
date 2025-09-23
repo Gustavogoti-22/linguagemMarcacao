@@ -1,6 +1,6 @@
 :root{
-    --cor-vermelho-ifood: #ea1d2c;
-    --cor-cinza-texto: #575757;
+    --cor-verde-starbucks: #006241;
+    --cor-preto-texto: #27251F;
     --cor-cinza-borda: #e2e2e2;
     --cor-fundo: #f7f7f7;
 }
@@ -24,13 +24,13 @@ body{
 }
 
 .logo{
-    height: 5vh;
+    height: 7vh;
 }
 
 .container{
     /* Propriedade define a largura maxima que ele pode atingir */
-    max-width: 1200px;
-    padding: 0 20px;
+    max-width: 1000px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,10 +41,11 @@ body{
   gap: 20px;
 }
 
+
 .item{
   /* remover decoraçao da tag a */
   text-decoration: none;
-  color: var(--cor-cinza-texto);
+  color: var(--cor-preto-texto);
   /* aplicando negrito */
   font-weight: 600;
   padding: 8px 0;
@@ -53,8 +54,8 @@ body{
 
 .item:focus,
 .item:hover{
-  color: var(--cor-vermelho-ifood);
-  border-bottom-color: var(--cor-vermelho-ifood);
+  color: var(--cor-verde-starbucks);
+  border-bottom-color: var(--cor-verde-starbucks);
 }
 
 .buscar{
@@ -84,16 +85,24 @@ body{
 
 .criar-conta{
   text-decoration: none;
-  color: var(--cor-vermelho-ifood);
+  color: var(--cor-verde-starbucks);
   font-weight: 600;
 }
 
 .botao-entrar{
-  background-color: var(--cor-vermelho-ifood);
+  background-color: var(--cor-verde-starbucks);
   color: var(--cor-fundo);
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.imgloc{
+    height: 3vh;    
+}
+
+.direita{
+    display: flex;
 }
