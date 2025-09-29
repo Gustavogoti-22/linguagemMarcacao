@@ -97,3 +97,36 @@ body{
   font-weight: 600;
   cursor: pointer;
 }
+
+.clase{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  margin-top: 2rem;
+  margin-inline: 10vh;
+  text-align: center;
+}
+
+.img{
+  height: 8vh;
+}
+
+.negrito{
+  margin-top: 4rem;
+}
+
+.frente{
+  /* o trem q faz ir pra frente */
+  transition: transform 0.2s ease;
+}
+
+.frente:hover{
+  transform: translateY(-5px);
+}
+
+.img2{
+  height: 10vh;
+  justify-content:space-between;
+  align-items: baseline;
+  border-radius: 50px;
+}

@@ -29,8 +29,8 @@ body{
 
 .container{
     /* Propriedade define a largura maxima que ele pode atingir */
-    max-width: 1000px;
-    padding: 0 10px;
+    max-width: 1200px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@ body{
 
 .navegacao{
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 
@@ -105,4 +105,56 @@ body{
 
 .direita{
     display: flex;
+}
+
+.banner-imagem{
+  /* aplicando imagem como plano de fundo */
+  background-image: url(./img/banner.avif);
+  width: 100%;
+  height: 40vh;
+  /*A propriedade background-repeat faz com q o elemento duplique até preencher todo o espaço 
+  background-repeat: no-repeat; 
+   propriedade backgounde-size define com q a imagem preencha tudo
+  background-size: cover;*/
+}
+
+.banner-texto{
+  background-color: rgb(212, 233, 226);
+  margin-top: 1rem;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.saiba-mais{
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+.banner-tres{
+  display: flex;
+}
+
+.tamanho{
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.estilo-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(212, 233, 226);
+}
+
+.banner-quatro{
+  display: flex;
 }
