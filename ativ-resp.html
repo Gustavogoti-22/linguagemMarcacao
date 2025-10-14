@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade RESP</title>
+
+    <style>
+         body{
+            font-family: 'Teko', sans-serif;
+            background-color: black;
+            color: #fff;
+            margin: o;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .info-tela{
+            font-size: 1.8rem;
+            color: #ffc107;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .texto-tablet,
+        .texto-notebook,
+        .texto-tela-grande{
+            display: none;
+            /* os tres elementos não serão mostrados na tela */
+        }
+
+        .cartao-jogador{
+            background: linear-gradient(145deg, #0156ab, #162447);
+            border-radius: 15px;
+            border: 2px solid #00aeff;
+            box-shadow: 0 0 25px rgba(0, 174, 255, 0.5);
+            width: 280px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .molde-avatar{
+            border: 4px solid #00aeff;
+            border-radius: 50%;
+            padding: 5px;
+            margin-bottom: 15px;
+
+        }
+
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .info-jogador h2{
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .status{
+            font-size: 1.2rem;
+            color: rgb(46, 217, 194);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .atributos{
+            display: none;
+        }
+
+        /* media queries para ajustar e o conteudo se adaptar a tela */
+        @media (min-width: 600px){
+            .texto-celular{display: none;}
+            .texto-tablet{display: block;}
+            .cartao-jogador{
+                flex-direction: row;
+                background: linear-gradient(145deg, #01b507, #029b07);
+                width: 550px;
+            }
+            .molde-avatar{margin: 0 25px 0 0;}
+            .avatar{width: 140px; height: 140px;}
+            .info-jogador, .status{text-align: left;}
+            .atributos{display: flex;
+            flex-direction: row;
+            gap: 5px 20px;
+            width: 100%;
+            margin-top: 15px;
+            color: #aba8a8;
+            }
+            .item-atributo{font-size: 1.3rem}
+            .item-atributo strong{
+                font-size: 1.5rem; color: #ffc107;
+            }
+        }
+
+        @media (min-width: 992px){
+            .texto-tablet{display: none;}
+            .texto-notebook{display: block;}
+            .cartao-jogador{width: 650px; padding: 30px;
+            background: linear-gradient(145deg, #d2e12e, #d1cd02);}
+            .avatar{width: 160px; height: 160px;}
+            .info-jogador h2{font-size: 3rem;}
+        }
+
+        @media (min-width: 1200px){
+            .texto-notebook{display: none;}
+            .texto-tela-grande{display: block;}
+            .cartao-jogador{width: 700px; padding: 45px;
+            background: linear-gradient(145deg, #de32de, #900395);}
+            .avatar{width: 200px; height: 200px;}
+            .info-jogador h2{font-size: 5rem;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Responsividade</h1>
+    <div class="info-tela">
+        <span class="texto-celular">VISUALIZAÇÃO: CELULAR</span>
+        <span class="texto-tablet">VISUALIZAÇÃO: TABLET</span>
+        <span class="texto-notebook">VISUALIZAÇÃO: NOTEBOOK</span>
+        <span class="texto-tela-grande">VISUALIZAÇÃO: TELA GRANDE</span>
+    </div>
+    <main>
+        <div class="cartao-jogador">
+            <div class="molde-avatar">
+                <img class="avatar" src="data:image/jpeg;base64,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">
+            </div>
+            <div class="container-info">
+                <div class="info-jogador">
+                    <h2>CYRA</h2>
+                    <div class="status">Online</div>
+                </div>
+                <div class="atributos">
+                    <div class="item-atributo">Nivel: <strong>5</strong></div>
+                    <div class="item-atributo">Classe: <strong>Miaw</strong></div>
+                    <div class="item-atributo">Poder: <strong>8.5</strong></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
