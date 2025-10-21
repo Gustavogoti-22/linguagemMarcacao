@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda on-Line</title>
+    <!-- serve para adicionar uma imagem na aba de navegação -->
+    <link rel="shortcut icon" href="./img/mercado.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-red-600 text-white border-b border-red-700 shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto flex items-center justify-between p-4 flex-wrap">
+        <a href="#" class="text-xl font-bold">Quitanda On-Line</a>
+        <div class="w-full flex-col lg:flex lg:flex-row lg:w-auto lg:items-center gap-2">
+            <ul class="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 ">
+                <li><a href="#principal" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Principal</a></li>
+                <li><a href="" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Produtos</a></li>
+            </ul>
+            <ul class="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-4">
+                <li><a href="" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Cadastrar</a></li>
+                <li><a href="" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Entrar</a></li>
+                <li><a href="" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors"><svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<!-- corpo principal -->
+    <main>
+        <section id="principal" class="h-[60vh] bg-gray-300 flex items-center"> 
+            <div class="h-full w-full bg-black/30 flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                        Sua feira <span class="text-green-500">fresca</span>, <br>sem sair de casa.
+                    </h1>
+                    <p class="text-gray-200 text-lg md:text-xl mt-4 max-w-xl mx-auto">
+                        Os melhores produtos organicos e frescos, direto do produtor para sua mesa.
+                    </p>
+                    <a href="" class="mt-8 bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-600
+                    transition-all transform hover:scale-105 inline-block">Ver Ofertas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section de ofertas -->
+        <section id="produtos" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Ofertas da semana</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- carrossel de cards -->
+                    <!-- criando card -->
+                    <div class="bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <a href="">
+                            <img src="./img/maca.png" alt="" class="w-full h-48 object-contain">
+                        </a>
+                        <div class="p-6">
+                            <a href=""><h3 class="text-2xl font-bold mb-2 hover:text-red-600 transition-colors">Maça Gala</h3></a>
+                            <p class="text-gray-600 mb-4">Aprox. 1kg</p>
+                            <div class="flex justify-between items-center ">
+                            <span class="text-2xl font-bold text-green-600">R$7,99</span>
+                            <a href="" class="bg-red-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-red-600 
+                            transition-colors">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+
+                    <div class="bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <a href="">
+                            <img src="./img/cenoura.png" alt="" class="w-full h-48 object-contain">
+                        </a>
+                        <div class="p-6">
+                            <a href=""><h3 class="text-2xl font-bold mb-2 hover:text-red-600 transition-colors">Cenoura</h3></a>
+                            <p class="text-gray-600 mb-4">Aprox. 1kg</p>
+                            <div class="flex justify-between items-center ">
+                            <span class="text-2xl font-bold text-green-600">R$3,99</span>
+                            <a href="" class="bg-red-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-red-600 
+                            transition-colors">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <a href="">
+                            <img src="./img/image.png" alt="" class="w-full h-48 object-contain">
+                        </a>
+                        <div class="p-6">
+                            <a href=""><h3 class="text-2xl font-bold mb-2 hover:text-red-600 transition-colors">Brocolis</h3></a>
+                            <p class="text-gray-600 mb-4">Aprox. 1kg</p>
+                            <div class="flex justify-between items-center ">
+                            <span class="text-2xl font-bold text-green-600">R$19,99</span>
+                            <a href="" class="bg-red-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-red-600 
+                            transition-colors">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <a href="">
+                            <img src="./img/tomate.png" alt="" class="w-full h-48 object-contain">
+                        </a>
+                        <div class="p-6">
+                            <a href=""><h3 class="text-2xl font-bold mb-2 hover:text-red-600 transition-colors">Tomate</h3></a>
+                            <p class="text-gray-600 mb-4">Aprox. 1kg</p>
+                            <div class="flex justify-between items-center ">
+                            <span class="text-2xl font-bold text-green-600">R$6,99</span>
+                            <a href="" class="bg-red-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-red-600 
+                            transition-colors">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
